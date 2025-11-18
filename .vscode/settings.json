@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/*SUMMARY*.md": true,
+    "**/*COMPLETE*.md": true,
+    "**/*FIXES*.md": true,
+    "**/*SESSION*.md": true,
+    "**/*PROMPT*.md": true,
+    "**/*STATUS*.md": true
+  },
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  }
+}

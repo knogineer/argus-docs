@@ -1,0 +1,25 @@
+{
+  "name": "argus-docs",
+  "version": "1.0.0",
+  "description": "Argus Platform Documentation",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "sync": "node scripts/sync-docs.js",
+    "validate": "node scripts/validate-docs.js",
+    "generate:api": "node scripts/generate-api-docs.js",
+    "generate:components": "node scripts/generate-component-docs.js",
+    "check": "npm run validate && npm run build"
+  },
+  "dependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typedoc": "^0.25.0",
+    "typedoc-plugin-markdown": "^3.17.0"
+  }
+}

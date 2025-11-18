@@ -1,0 +1,95 @@
+/**
+ * Knogin Branding & WCAG 2.2 AAA Accessibility
+ * Based on https://branding.knogin.com
+ */
+
+:root {
+  /* Knogin Brand Colors */
+  --vp-c-brand-1: #0066CC;
+  --vp-c-brand-2: #0052A3;
+  --vp-c-brand-3: #003D7A;
+  
+  /* Accessible contrast ratios (WCAG AAA: 7:1 minimum) */
+  --vp-c-text-1: #1a1a1a;
+  --vp-c-text-2: #333333;
+  --vp-c-bg: #ffffff;
+  
+  /* Focus indicators (WCAG 2.2 AAA) */
+  --vp-c-focus: #0066CC;
+  --focus-ring: 0 0 0 3px rgba(0, 102, 204, 0.3);
+}
+
+/* Dark mode with accessible contrast */
+.dark {
+  --vp-c-text-1: #f5f5f5;
+  --vp-c-text-2: #e0e0e0;
+  --vp-c-bg: #1a1a1a;
+}
+
+/* WCAG 2.2 AAA: Focus indicators */
+*:focus-visible {
+  outline: 3px solid var(--vp-c-focus);
+  outline-offset: 2px;
+  box-shadow: var(--focus-ring);
+}
+
+/* WCAG 2.2 AAA: Touch targets minimum 44x44px */
+.VPButton,
+.VPNavBarMenuLink,
+.VPSidebarItem {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+}
+
+/* WCAG 2.2 AAA: Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--vp-c-brand-1);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Knogin typography */
+.VPDoc h1,
+.VPDoc h2,
+.VPDoc h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+}
+
+/* Accessible code blocks */
+.vp-code-group {
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --vp-c-text-1: #000000;
+    --vp-c-bg: #ffffff;
+  }
+  
+  .dark {
+    --vp-c-text-1: #ffffff;
+    --vp-c-bg: #000000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
