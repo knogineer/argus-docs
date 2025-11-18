@@ -1,4 +1,6 @@
 ---
+title: Argus Platform Documentation
+description: Centralized Argus platform documentation with guides, API references, and component manuals.
 layout: home
 
 hero:
@@ -42,12 +44,13 @@ features:
 
 ## Quick Links
 
-- [Quick Start Guide](/guide/quick-start)
-- [Architecture Overview](/guide/architecture)
-- [GraphQL API](/api/graphql)
-- [Component Library](/components/)
-- [Accessibility Requirements](/guide/accessibility)
+- [Development Environment](/guide/)
+- [AI Master Guide](/guide/ai-guide)
 - [Coding Guidelines](/guide/coding-guidelines)
+- [Type Safety Rules](/guide/type-safety)
+- [Accessibility & i18n](/guide/accessibility)
+- [Database Connections](/guide/database)
+- [Deployment Playbook](/guide/deployment)
 
 ## About This Documentation
 
@@ -60,4 +63,4 @@ This documentation site consolidates all Argus Platform documentation into a sin
 
 ## Contributing
 
-Found an issue or want to contribute? See our [Contributing Guide](/guide/contributing).
+Found an issue or want to contribute? Visit the project repository on GitHub: https://github.com/knogineer/argus-docs.

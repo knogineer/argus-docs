@@ -26,28 +26,15 @@ export default defineConfig({
     sidebar: {
       '/guide/': [
         {
-          text: 'Getting Started',
+          text: 'Core Guides',
           items: [
-            { text: 'Introduction', link: '/guide/' },
-            { text: 'Quick Start', link: '/guide/quick-start' },
-            { text: 'Installation', link: '/guide/installation' }
-          ]
-        },
-        {
-          text: 'Development',
-          items: [
-            { text: 'Architecture', link: '/guide/architecture' },
-            { text: 'Database', link: '/guide/database' },
-            { text: 'Deployment', link: '/guide/deployment' }
-          ]
-        },
-        {
-          text: 'Standards',
-          items: [
+            { text: 'Overview', link: '/guide/' },
+            { text: 'AI Master Guide', link: '/guide/ai-guide' },
             { text: 'Coding Guidelines', link: '/guide/coding-guidelines' },
             { text: 'Type Safety', link: '/guide/type-safety' },
-            { text: 'Accessibility', link: '/guide/accessibility' },
-            { text: 'i18n', link: '/guide/i18n' }
+            { text: 'Accessibility & i18n', link: '/guide/accessibility' },
+            { text: 'Database', link: '/guide/database' },
+            { text: 'Deployment', link: '/guide/deployment' }
           ]
         }
       ],
